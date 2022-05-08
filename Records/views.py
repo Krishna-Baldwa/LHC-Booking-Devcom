@@ -27,7 +27,8 @@ class halls_list(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def put(self,request):
-        serializer = hallsSerializer(halls, data=request.data)
+        hall = halls.objects.filter(hall_id=request.data["hall_id"])[0]
+        serializer = hallsSerializer(hall, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
