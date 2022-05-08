@@ -1,5 +1,5 @@
-# LHC-Booking-Devcom
-The url for the admin page is http://127.0.0.1:8000/admin/
+# LHC-Booking-Devcom\n
+The url for the admin page is http://127.0.0.1:8000/admin/  \n
 Superuser username: Krishna
           password: admin
 The url to display the rest-framework page is http://127.0.0.1:8000/halls/
